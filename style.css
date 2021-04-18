@@ -21,7 +21,6 @@ body{
 }
 
 .nav-wrapper{
-    position: absolute;
     height: 120px;
     display: flex;
     padding: 0 100px;
@@ -64,6 +63,86 @@ body{
 }
 
 
+
+
+
+
+.header{
+   position: relative;
+   background-image: url(https://lh3.googleusercontent.com/proxy/BKK116wSzWb4m3CctfXJptLH9uM4rQo01dnafAS-gfQx6akgW3hfcM3j83_WlL4M02LU6b-uTj-rQE5ObTQsoq0GN9dpOgtV0yT1ucsJ265-Jw);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center; 
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.header > .box{
+    z-index: 1;
+    text-align: center;
+}
+
+
+.box{
+    background-color: rgba(32, 29, 29, 0.5);
+}
+
+.header-btn{
+    width: 100px;
+    background-color: rgb(48, 36, 36);
+    color: rgb black;
+    outline: none;
+}
+
+
+
+.h1{
+    font-size: 5.5rem;
+}
+
+
+.subtitle{
+    font-size: 4.2rem;
+}
+
+.header-btn{
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    border-radius: 20px;
+}
+.header-btn:active{
+    background-color: yellow;
+}
+
+
+.header-btn + .header-btn{
+    margin-left: 20px;
+}
+
+.trsp{
+border: 2px solid;
+background-color: orange;
+}
+.green{
+    background-color: blue;
+}
 
 
 
